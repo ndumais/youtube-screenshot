@@ -16,7 +16,7 @@ captureScreenshot = function () {
 downloadFile = function(canvas) {
   var aClass = 'youtube-screenshot-a';
   var a = document.createElement('a');
-  a.href = canvas.toDataURL('image/jpeg');
+  a.href = canvas.toDataURL('image/png');
   a.download = getFileName();
   a.style.display = 'none';
   a.classList.add(aClass);
